@@ -3,7 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
+.upper{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  display: flex;                  /* ← add this */
+  justify-content: space-between; /* ← logo left, links right */
+  align-items: center;            /* ← vertically centered */
+  padding: 10px 40px;             /* ← breathing room */
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tiny {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.idea{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap; /* stops text from wrapping */
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding-right: 40px;
+}
 body {
   font-family: Arial;
   background-color: white;
@@ -30,6 +71,7 @@ body {
   font-size: 20px;     /* make text bigger */
   font-weight: bold;
   text-align: left;  /* make text bold */
+  width: 100%;
 }   
 .testimonial{
     text-align: center;
@@ -60,21 +102,7 @@ body {
     font-family: Times New Roman;
     font-size: 20px;
 }
-#transition{
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 12px;
-    border: none;
-    transition: all 0.3secs ease;
-    text-align: center;
-    color: red;
-    background-color: black;
-}
-#transition:hover{
-  background-color: rgb(250, 14, 14);
-  color: black;
-  border: 2px solid black;
-}
+
 .center{
     text-align: center;
     margin-top: -50px;
@@ -128,4 +156,23 @@ body {
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #111;
+}
+.list{
+  margin-top: 20px;
+  margin-left: 80px;
+  list-style-type: none;
+}
+.items{
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+.items a{
+  text-decoration: none;
+  color: #333;
+}
+.line{
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
 }
